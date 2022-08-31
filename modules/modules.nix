@@ -28,6 +28,7 @@
     ./joinmarket.nix
     ./joinmarket-ob-watcher.nix
     ./hardware-wallets.nix
+    ./teos.nix
 
     # Support features
     ./versioning.nix
@@ -37,6 +38,7 @@
     ./netns-isolation.nix
     ./nodeinfo.nix
     ./backups.nix
+
   ];
 
   disabledModules = [ "services/networking/bitcoind.nix" ];
