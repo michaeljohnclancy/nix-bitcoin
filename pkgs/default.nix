@@ -20,6 +20,7 @@ let self = {
   # The secp256k1 version used by joinmarket
   secp256k1 = pkgs.callPackage ./secp256k1 { };
   spark-wallet = pkgs.callPackage ./spark-wallet { };
+  teos = pkgs.callPackage ./teos { };
 
   nbPython3Packages = (pkgs.python3.override {
     packageOverrides = import ./python-packages self;
